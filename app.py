@@ -96,7 +96,7 @@ st.markdown("""
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('/content/amazon.csv')
+        df = pd.read_csv('amazon.csv')
         
         # Convert 'Date' column to datetime objects
         if 'Date' in df.columns:
